@@ -1,0 +1,43 @@
+{
+  "name": "maze-ascii",
+  "version": "1.0.0",
+  "description": "Wrapper around generate-maze producing ASCII art output.",
+  "main": "index.js",
+  "dependencies": {
+    "generate-maze": "^0.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.7.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "mocha": "^5.2.0",
+    "prettier": "^1.14.3"
+  },
+  "scripts": {
+    "test": "mocha $npm_package_config_INCLUDE_PATHS_TEST_JS",
+    "prettier": "prettier --write $npm_package_config_INCLUDE_PATHS_JS",
+    "lint": "eslint $npm_package_config_INCLUDE_PATHS_JS",
+    "start": "node example.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aaron-em/maze-ascii.git"
+  },
+  "keywords": [
+    "maze",
+    "ascii-art",
+    "ascii",
+    "art",
+    "generate-maze"
+  ],
+  "author": "Aaron Miller <me@aaron-miller.me>",
+  "license": "WTFPL",
+  "bugs": {
+    "url": "https://github.com/aaron-em/maze-ascii/issues"
+  },
+  "homepage": "https://github.com/aaron-em/maze-ascii#readme",
+  "config": {
+    "INCLUDE_PATHS_JS": "*.js **/*.js",
+    "INCLUDE_PATHS_TEST_JS": "*.test.js **/*.test.js"
+  }
+}
